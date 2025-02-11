@@ -1,0 +1,89 @@
+name: myapp
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+
+dependencies:
+  freezed_annotation:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  universal_html: ^2.2.3 #スクレイピングするなら必須
+  url_launcher: ^6.1.12 #スクレイピングするなら入れておきたい
+  intl: ^0.18.1
+  http: ^0.13.0
+  flutter_riverpod: ^2.4.0
+  settings_ui: ^2.0.2 #必須
+  shared_preferences: ^2.2.1 #必須
+  sqflite: ^2.3.0
+  sqlite3: ^2.1.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+  pie_menu: ^2.0.2
+  circle_wheel_scroll: ^0.0.3
+  fl_chart: ^0.64.0
+  flutter_colorpicker: ^1.0.3
+  substring_highlight: ^1.0.33
+  flutter_screenutil: ^5.9.0
+  scroll_to_index: ^3.0.1
+  connectivity_plus: ^5.0.1
+  dropdown_button2: ^2.3.9
+  flutter_tts: ^3.8.3
+  scrollable_positioned_list: ^0.3.8
+  translator: ^0.1.7 
+
+dev_dependencies:
+  freezed:
+  build_runner:
+  json_serializable:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  assets:
+  - assets/
+  - assets/ejdict_1.db
+  - assets/ejdict.db
+  - assets/folder.db
+
+  fonts:
+   - family: Murecho
+     fonts:
+       - asset: assets/fonts/Murecho/static/Murecho-Thin.ttf
+         weight: 100
+       - asset: assets/fonts/Murecho/static/Murecho-ExtraLight.ttf
+         weight: 200
+       - asset: assets/fonts/Murecho/static/Murecho-Light.ttf
+         weight: 300
+       - asset: assets/fonts/Murecho/static/Murecho-Regular.ttf
+         weight: 400
+       - asset: assets/fonts/Murecho/static/Murecho-Medium.ttf
+         weight: 500
+       - asset: assets/fonts/Murecho/static/Murecho-SemiBold.ttf
+         weight: 600
+       - asset: assets/fonts/Murecho/static/Murecho-Bold.ttf
+         weight: 700
+       - asset: assets/fonts/Murecho/static/Murecho-ExtraBold.ttf
+         weight: 800
+       - asset: assets/fonts/Murecho/static/Murecho-Black.ttf
+         weight: 900
+
+  uses-material-design: true
+
+
+
+
